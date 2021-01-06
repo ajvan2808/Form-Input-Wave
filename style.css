@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Muli', sans-serif;        /* different font-family will effect layout size (can try monospace font for exp)*/
+    background-color: rgb(82, 190, 109);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /*justify horizontally in flex display */
+    align-items: center;        /* jusstify vẻtically in flex display */
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+.container {
+    background-color: rgba(60, 104, 71, 0.801);
+    border-radius: 5px;
+    padding: 20px 40px;
+}
+
+.container h1 {
+    color: rgb(235, 150, 94);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* .container a {
+    text-decoration: none;
+    color: aquamarine;
+} */
+
+.form-control {
+    position: relative;
+    width: 300px;
+    margin: 20px 0 40px;
+}
+
+.form-control input {
+    background-color: transparent;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+
+.form-control input:focus, 
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: aquamarine;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    /* left: 0; */
+    font-size: 18px;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: aquamarine;
+    transform: translateY(-30px);
+}
+
+.btn {
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+    background: aquamarine;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(235, 150, 94);
+}
+
+.btn:focus {
+    outline: 0;
+}
+.btn:active {
+    transform: scale(0.98);
+}
+.text {
+    margin-top: 30px;
+}
+
+.text a{
+   text-decoration: none;   /* hoặc style css cho <a> như thế này */
+    color: aquamarine; 
+}
